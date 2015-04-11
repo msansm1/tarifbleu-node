@@ -81,6 +81,8 @@ function majData(data) {
 	infosCompteur.pmoy = infosCompteur.psum / infosCompteur.nbMesure;
 	// Index compteur en Wh
 	infosCompteur.index = data.BASE;
+	infosCompteur.indexHC = data.HCHC;
+	infosCompteur.indexHP = data.HCHP;
 	// puissance apparente instantannée en VA
 	infosCompteur.pinst = data.PAPP;
 	// intensité instantannée en A
