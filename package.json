@@ -1,6 +1,6 @@
 {
   "name": "tarifbleu",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Decode tarifbleu data (french electricity meter) from serial port",
   "main": "tarifbleu.js",
   "keywords": [
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lhuet/tarifbleu-node.git"
+    "url": "https://github.com/msansm1/tarifbleu-node.git"
   },
   "dependencies": {
     "cron": "1.0.3"
@@ -20,5 +20,9 @@
     "email": "laurent.huet@gmail.com",
     "url": "http://lhuet.github.io/blog/"
   },
+  "contributors": [{
+    "name": "Ronan Barbot",
+    "email": "ronanbarbot@dizalch.fr"
+  }],
   "license": "MIT"
 }
