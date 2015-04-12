@@ -45,7 +45,9 @@ function tarifbleu(port, cronTime, datalogger, errorcb) {
 	return {
 		getPuissanceApparente: function() {return infosCompteur.pinst},
 		getIntensite: function() {return infosCompteur.iinst},
-		getIndex: function() {return infosCompteur.index}
+		getIndex: function() {return infosCompteur.index},
+		getIndexHC: function() {return infosCompteur.indexHC},
+		getIndexHP: function() {return infosCompteur.indexHP}
 	}
 }
 
