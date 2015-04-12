@@ -41,8 +41,20 @@ function tarifbleu(port, cronTime, datalogger, errorcb) {
 		},
 		true
 	);
+	
+    return {
+        getPuissanceApparente: function() {return infosCompteur.pinst},
+        getIntensite: function() {return infosCompteur.iinst},
+        getIndex: function() {return infosCompteur.index},
+        getIndexHC: function() {return infosCompteur.indexHC},
+        getIndexHP: function() {return infosCompteur.indexHP}
+    }
+
 }
 
+function getPapp() {
+	return infosCompteur.pinst;
+}
 
 function getPuissanceApparente() {
 	return infosCompteur.pinst;
@@ -63,6 +75,7 @@ function getIndexHC() {
 function getIndexHP() {
 	return infosCompteur.indexHP;
 }
+
 
 function razinfosCompteur() {
 	infosCompteur.imini = 30; // max de la souscription
@@ -104,4 +117,10 @@ function majData(data) {
 	infosCompteur.iinst = data.IINST;
 }
 
-module.exports = tarifbleu
+exports.tarifbleu = tarifbleu;
+exports.getPuissanceApparente = getPapp;
+exports.getIntensite = getIntensite;
+exports.getIndex = getIndex;
+exports.getIndexHC = getIndexHC;
+exports.getIndexHP = getIndexHP;
+
