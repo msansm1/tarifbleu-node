@@ -41,14 +41,27 @@ function tarifbleu(port, cronTime, datalogger, errorcb) {
 		},
 		true
 	);
-	
-	return {
-		getPuissanceApparente: function() {return infosCompteur.pinst},
-		getIntensite: function() {return infosCompteur.iinst},
-		getIndex: function() {return infosCompteur.index},
-		getIndexHC: function() {return infosCompteur.indexHC},
-		getIndexHP: function() {return infosCompteur.indexHP}
-	}
+}
+
+
+function getPuissanceApparente() {
+	return infosCompteur.pinst;
+}
+
+function getIntensite() {
+	return infosCompteur.iinst;
+}
+
+function getIndex() {
+	return infosCompteur.index;
+}
+
+function getIndexHC() {
+	return infosCompteur.indexHC;
+}
+
+function getIndexHP() {
+	return infosCompteur.indexHP;
 }
 
 function razinfosCompteur() {
